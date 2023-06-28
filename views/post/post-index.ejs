@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'ActiveInsights'}) %>
+    <link rel="stylesheet" href="/styles/post-index.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section>
+        <h2>Community Board</h2>
+        <h3>A place to ask any questions, share progress, and connect with others.</h3>
+    </section>
+
+    <main>
+        <section class="listings">
+            <ul>
+                <% for (let post of posts) { %>
+                <li class="container" id="container">
+                    <h3><%= post.name %></h3>
+                    <p><%= post.content %></p>
+                    <% if (post.comments.length > 0) { %>
+                        <section>
+                            <ul>
+                                <%# for (let i = 0; i<2; i++) { %>
+                                <% let i = 0; %>
+                                <% while(post.comments[i] && i<2) { %>  
+                                <li class="comments">
+                                    <p><%= post.comments[i].name %> - <%= post.comments[i].content %></p>
+                                    <a class="hidden" href="/comments/<%= post.comments[i]._id %>">More</a>
+                                </li>
+                                <% i++; %>
+                                <% } %>
+                            </ul>
+                        </section>
+                    <% } %>
+                    <a class="hidden" href="/posts/<%= post._id %>">Edit</a>
+                    <a class="hidden" href="/comments/new/<%= post._id %>">Comment</a>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

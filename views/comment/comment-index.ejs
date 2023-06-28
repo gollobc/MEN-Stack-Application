@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Comments | ActiveInsights'}) %>
+    <link rel="stylesheet" href="/styles/post-index.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <main>
+        <section class="listings">
+            <ul>
+                <% for (let comment of comments) { %>
+                <li>
+                    <h4><%= comment.name %> - <%= comment.content %></h4>
+                    <a href="/comments/<%= comment._id %>">Read More</a>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

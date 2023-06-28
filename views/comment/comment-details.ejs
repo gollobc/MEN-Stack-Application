@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'My Comments | ActiveInsights'}) %>
+    <link rel="stylesheet" href="/styles/comment-details.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="application">
+        <h1><%= comment.name %></h1>
+        <table>
+            <tr>
+                <th>
+                    <h2>Comment:</h2>
+                </th>
+                <td>
+                    <h2><%= comment.content %></h2>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Date submitted:</h2>
+                </th>
+                <td>
+                    <h2><%= comment.date.toLocaleDateString() %></h2>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <form method="POST" action="/comments/<%= comment._id %>?_method=DELETE">
+        <input class="btn" type="submit" value="Delete" />
+    </form>
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

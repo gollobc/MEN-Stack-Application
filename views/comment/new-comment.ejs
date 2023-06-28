@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Leave a Comment | ActiveInsights'}) %>
+    <link rel="stylesheet" href="/styles/post-form.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Comment</h2>
+    </section>
+
+    <form action="/comments/create/<%= post._id %>" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="content">Content:</label><br>
+        <input type="text" id="content" name="content" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

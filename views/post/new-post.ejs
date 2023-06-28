@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Add a Post | ActiveInsights'}) %>
+    <link rel="stylesheet" href="/styles/post-form.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Create a Post</h2>
+    </section>
+
+    <form method="POST" action="/posts">
+        <!-- Name input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" required></textarea><br>
+        <input type="submit" value="Create Post">
+    </form>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
