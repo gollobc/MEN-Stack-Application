@@ -4,16 +4,14 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-.hero {
-    background-color: rgb(76, 211, 211);
+body {
+    background: url(https://images.pexels.com/photos/3227984/pexels-photo-3227984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
 }
 .listings {
     margin-top: 50px;
-}
-
-.listings h1 {
-    margin-bottom: 20px;
-    text-align: center;
+    
 }
 
 .listings ul {
@@ -23,38 +21,20 @@ main {
 
 .listings li {
     margin-bottom: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #616161;
     padding: 5px;
     border-radius: 4px;
     position: relative;
     text-align: center;
-    /* margin-bottom: 40px; */
-}
-
-figcaption {
-    text-align: left;
-}
-
-.listings li h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.listings li p {
-    font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .listings li a {
     background-color: #333;
     color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 12px;
+    padding: 5px;
     border: none;
     border-radius: 4px;
-    /* position: absolute;
-    bottom: 20px;
-    right: 20px; */
     text-decoration: none;
 }
 
@@ -65,13 +45,12 @@ figcaption {
 .hidden{
     display: none;
 } 
- li:hover > .hidden {
+li:hover > .hidden {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 .listings li {
     padding: 5px 10px;
-    /* margin-bottom: 10px; */
 }
 .comments {
     position: relative;
@@ -79,10 +58,10 @@ figcaption {
 }
 .comments a {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 7%;
+    right: .5%;
 }
 #container {
-    margin-top: 30px;
     margin-bottom: 30px;
+    background: #fae3e3;
 }

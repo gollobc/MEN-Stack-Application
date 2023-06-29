@@ -1,69 +1,67 @@
-/* About section styles */
-.about {
-    background-color: #fff;
-    padding: 2rem;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    margin-bottom: 1rem;
-}
-
-/* Featured pets section styles */
-.featured-pets {
-    background-color: #f7f7f7;
-    padding: 2rem;
-}
-
-.featured-pets h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.pet-grid {
+section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    margin-top: 2rem;
-}
-
-.pet-grid li {
-    width: calc(33% - 1rem);
-    min-width: 300px;
-    margin-bottom: 2rem;
-    background-color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-figure {
-    height: 70%;
-}
-
-.pet-grid img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-figcaption {
-    height: 30%;
-    padding: 1rem 2rem 0 2rem;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    color: black;
+}
+section > * {
+    max-width: 60vw;
+    padding: 10px;
+}
+ul {
+    margin: 15px 20px;
+}
+h2 {
+    margin: 20px 0px;
+}
+.about a{
+    padding: 1rem;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 10px;
 }
 
-.featured-info h3 {
-    font-size: calc(1em + 0.5vw);
+#top {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ejVuJ0MIhdvBs_Ey3oQFHAHaFj%26pid%3DApi&f=1&ipt=2ec0cd08a8ba7ee6446dc48b54f0f68d159d0dd7c313774b730aa5f975c5ede6&ipo=images) no-repeat center;
+    background-size: cover;
+}
+#top div {
+    backdrop-filter: blur(10px);
 }
 
-.featured-info p {
-    font-size: calc(0.5rem + 0.5vw);
+
+.resistance {
+    background: url(https://formnutrition.com/wp-content/uploads/2019/10/AdobeStock_133531764.jpeg) no-repeat center center;
+}
+.resistance div {
+    backdrop-filter: blur(20px);
+}
+
+
+.aerobic {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CTXs69Kfqu0gCs-znCEyMwHaCt%26pid%3DApi&f=1&ipt=c4fcef72296d07415c875ecc9e9b6f8de5ddc235104ea682e33b6cf21fe17594&ipo=images) no-repeat center center;
+    background-size: cover;
+    
+}
+
+.aerobic div{
+    backdrop-filter: blur(10px);
+}
+
+
+.nutrition {
+    background: url(https://chartwell.com/-/media/Images/blog/2019/02/6-tips-to-make-good-nutrition-and-healthy-eating-easier) no-repeat center center fixed;
+    opacity: 1;
+}
+.nutrition div{
+    backdrop-filter: blur(50px);
+}
+
+
+.recovery {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.nubp_SL3UATC7Tmv0-Fi8wHaEH%26pid%3DApi&f=1&ipt=a488dad9fa2e80a8cab0afa2ddfa0225ddd39412582328f7eebdb410851f8f7e&ipo=images) no-repeat center center;
+    background-size: cover;
+}
+.recovery div{
+    backdrop-filter: blur(50px);
 }

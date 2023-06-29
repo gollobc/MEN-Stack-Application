@@ -16,6 +16,7 @@
         </section>
         <section class="actions">
             <button class="btn"><a href="/posts/<%= post._id %>/edit">Update</a></button>
+            <a class="hidden" href="/comments/new/<%= post._id %>">Comment</a>
             <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
                 <input class="btn" type="submit" value="Delete" />
             </form>
