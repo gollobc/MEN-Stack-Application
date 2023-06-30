@@ -24,16 +24,6 @@ const commentCtrl = require('./controllers/comments');
 const app = express();
 
 
-// Configure the app to refresh the browser when nodemon restarts
-/*--------------------------------------------------------------- */
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-    setTimeout(() => {
-        liveReloadServer.refresh("/");
-    }, 100);
-});
-
-
 // Configure the app (app.set)
 /*--------------------------------------------------------------- */
 app.set('view engine', 'ejs');

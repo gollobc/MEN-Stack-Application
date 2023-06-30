@@ -15,11 +15,11 @@
 
     <form action="/comments/create/<%= post._id %>" method="POST">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" name="name" placeholder="User"><br>
 
         <label for="content">Content:</label><br>
         <!-- <input type="text" id="content" name="content" required> -->
-        <textarea id="content" name="content"  required></textarea>
+        <textarea id="content" name="content" placeholder="Content" required></textarea>
         <br>
 
         <input class="btn" type="submit" value="Submit">

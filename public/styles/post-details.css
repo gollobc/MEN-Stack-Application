@@ -19,6 +19,7 @@ body{
     justify-content: center;
     border: 2px solid black;
     box-shadow: 1rem 1rem 2rem black;
+    background: #fcf1f1;
 }
 
 .post h2 {
@@ -35,9 +36,11 @@ div > * {
 
 .actions {
     margin-top: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     width: 100vw;
     justify-content: space-around;
+    
 }
 
 .btn {

@@ -74,3 +74,26 @@ li:hover > .hidden {
     margin-bottom: 30px;
     background: #fcf1f1;
 }
+
+.newPost {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 2rem; */
+}
+#newPost {
+    background-color: #fcf1f1;
+    color: #000000;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#newPost:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    margin-bottom: 2rem;
+}

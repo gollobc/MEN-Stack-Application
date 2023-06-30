@@ -51,13 +51,13 @@ router.put('/:id', (req, res) => {
 // Destroy Route DELETE Route deletes a post document
 router.delete('/:id', (req, res) => {
     db.Post.findByIdAndRemove(req.params.id)
-        .then(post => res.redirect('post/post-index'))
+        .then(post => res.redirect('/posts'))
 })
 
 // Create Route POST Recieves POST request from new route, creates new post and redirects to post index page
 router.post('/', function (req, res){
     db.Post.create(req.body)
-        .then(post => res.redirect('post/post-index'))
+        .then(post => res.redirect('/posts'))
 })
 
 // Export routes so they are accessible in server.js
