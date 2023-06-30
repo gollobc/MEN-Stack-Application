@@ -1,6 +1,6 @@
 # MEN-Stack-Application
 ## App Screenshot
-<img src="/home/cadegollob/Code/Projects/Full-Stack-App/Screenshot 2023-06-29 212900.png">
+<img src="Screenshot 2023-06-29 212900.png">
 
 ## Technologies Used
 <ul>
