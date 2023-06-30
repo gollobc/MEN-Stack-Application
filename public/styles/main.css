@@ -2,19 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poiret One', cursive;
 }
 
+header a{
+    font-weight: bold;
+}
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bolder;
     line-height: 1.5;
     color: #333;
     background-color: #f7f7f7;
     min-height: 100vh;
 }
-
+#top {
+    margin-top: 92px;
+}
 a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -24,11 +30,15 @@ a:hover {
 
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     padding: 1rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 }
 
 h1 {
@@ -42,6 +52,7 @@ h1 a:hover {
 nav ul {
     display: flex;
     list-style: none;
+    margin: 15px 20px;
 }
 
 nav li:not(:last-child) {
@@ -52,6 +63,10 @@ nav a {
     font-size: 1.2rem;
 }
 
+iframe {
+    width: 65vw;
+    height: 30vh;
+} 
 
 footer {
     text-align: center;
@@ -67,4 +82,15 @@ footer * {
 
 footer ul {
     justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }   
+}
+@media screen and (min-width: 900px) {
+    iframe {
+        width: 600px;
+    }
 }

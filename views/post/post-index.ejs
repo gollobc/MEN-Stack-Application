@@ -9,7 +9,7 @@
 <body>
     <%- include('../partials/nav.ejs') %>
 
-    <section>
+    <section class="top">
         <h2>Community Board</h2>
         <h3>A place to ask any questions, share progress, and connect with others.</h3>
     </section>
@@ -20,7 +20,7 @@
                 <% for (let post of posts) { %>
                 <li class="container" id="container">
                     <h3><%= post.name %></h3>
-                    <p><%= post.content %></p>
+                    <p id="content"><%= post.content %></p>
                     <% if (post.comments.length > 0) { %>
                         <section>
                             <ul>

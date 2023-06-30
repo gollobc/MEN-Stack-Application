@@ -8,32 +8,34 @@
 
 <body>
     <%- include('../partials/nav.ejs') %>
-
-    <div>
-        <h2><%= post.name %></h2>
-        <section>
-            <p><%= post.content %></p>
-        </section>
-        <section class="actions">
-            <button class="btn"><a href="/posts/<%= post._id %>/edit">Update</a></button>
-            <a class="hidden" href="/comments/new/<%= post._id %>">Comment</a>
-            <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
-                <input class="btn" type="submit" value="Delete" />
-            </form>
-        </section>
+    <div class="wrap">
+        <div class="post">
+            <h2><%= post.name %></h2>
+            <h4><%= post.postDate.toLocaleDateString() %></h4>
+            <section>
+                <p><%= post.content %></p>
+            </section>
+            <section class="actions">
+                <button class="btn"><a href="/posts/<%= post._id %>/edit">Update</a></button>
+                <button class="btn"><a href="/comments/new/<%= post._id %>">Comment</a></button>
+                <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
+                    <input class="btn" type="submit" value="Delete" />
+                </form>
+            </section>
+        </div>    
         
+        <% if (post.comments.length > 0) { %>
+            <section >
+                <ul class="comments">
+                    <% for (let comment of post.comments) { %>
+                    <li>
+                        <p><%= comment.name %> - <%= comment.content %></p>
+                    </li>
+                    <% } %>
+                </ul>
+            </section>
+        <% } %>
     </div>
-    <% if (post.comments.length > 0) { %>
-        <section class="reviews">
-            <ul>
-                <% for (let comment of post.comments) { %>
-                <li>
-                    <h4><%= comment.name %> - <%= comment.content %></h4>
-                </li>
-                <% } %>
-            </ul>
-        </section>
-    <% } %>
     <%- include('../partials/footer.ejs') %>
 </body>
 

@@ -3,13 +3,13 @@
 
 <head>
     <%- include('../partials/head.ejs', {title: 'Edit a Post | ActiveInsights'}) %>
-    <link rel="stylesheet" href="/styles/post-form.css">
+    <link rel="stylesheet" href="/styles/post-edit.css">
 </head>
 
 <body>
     <%- include('../partials/nav.ejs') %>
 
-    <section class="hero">
+    <section id="top">
         <h2>Edit a Post</h2>
     </section>
 
@@ -20,7 +20,7 @@
         <!-- Content input -->
         <label for="content">Content:</label><br>
         <textarea id="content" name="content"  required><%= post.content %></textarea><br>
-        <input type="submit" value="Edit Post">
+        <input class="btn" type="submit" value="Edit Post">
     </form>
 
     <%- include('../partials/footer.ejs') %>

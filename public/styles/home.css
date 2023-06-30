@@ -1,3 +1,6 @@
+main {
+    font-weight: bolder;
+}
 section {
     display: flex;
     flex-direction: column;
@@ -8,11 +11,14 @@ section > * {
     max-width: 60vw;
     padding: 10px;
 }
-ul {
-    margin: 15px 20px;
+ul{
+    padding-left: 1rem;
 }
 h2 {
     margin: 20px 0px;
+}
+.about{
+    margin-top: 76px;
 }
 .about a{
     padding: 1rem;
@@ -22,7 +28,7 @@ h2 {
 }
 
 #top {
-    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ejVuJ0MIhdvBs_Ey3oQFHAHaFj%26pid%3DApi&f=1&ipt=2ec0cd08a8ba7ee6446dc48b54f0f68d159d0dd7c313774b730aa5f975c5ede6&ipo=images) no-repeat center;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ejVuJ0MIhdvBs_Ey3oQFHAHaFj%26pid%3DApi&f=1&ipt=2ec0cd08a8ba7ee6446dc48b54f0f68d159d0dd7c313774b730aa5f975c5ede6&ipo=images) no-repeat center center;
     background-size: cover;
 }
 #top div {
@@ -32,6 +38,7 @@ h2 {
 
 .resistance {
     background: url(https://formnutrition.com/wp-content/uploads/2019/10/AdobeStock_133531764.jpeg) no-repeat center center;
+    background-size: cover;
 }
 .resistance div {
     backdrop-filter: blur(20px);
@@ -51,6 +58,7 @@ h2 {
 
 .nutrition {
     background: url(https://chartwell.com/-/media/Images/blog/2019/02/6-tips-to-make-good-nutrition-and-healthy-eating-easier) no-repeat center center fixed;
+    background-size: cover;
     opacity: 1;
 }
 .nutrition div{
