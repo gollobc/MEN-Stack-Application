@@ -17,8 +17,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    box-shadow: 1rem 1rem 2rem black;
+    border: 2px solid #616161;
+    border-radius: 4px;
+    box-shadow: 1rem 1rem 2rem rgb(70, 70, 70);
     background: #fcf1f1;
 }
 
@@ -30,6 +31,7 @@ p {
     padding: 1rem;
     
 }
+
 div > * {
     max-width: 60vw;
 }
@@ -43,8 +45,12 @@ div > * {
     
 }
 
+.post a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .btn {
-    padding: .8rem;
     font-weight: 900;
     font-size: 18px;
 }
@@ -53,11 +59,25 @@ div > * {
     font-weight: bold;
     margin-bottom: 2rem;
 }
-input:hover {
+.btn:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
+.hidden{
+    opacity: 0;
+    transition: opacity .3s;
+} 
+li:hover > .hidden {
+     opacity: 1;
+}
+
 .comments {
     margin-top: 40px;
     font-size: 20px;
+}
+
+li p{
+    padding: 0;
+    margin-bottom: 0;
 }

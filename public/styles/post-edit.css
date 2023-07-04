@@ -11,23 +11,32 @@ form>* {
     padding: 1rem;
     font-weight: bold;
 }
-input, textarea {
+input{
     font-size: 20px;
-    box-shadow: .5rem .5rem 1rem black;
+    
+    box-shadow: .5rem .5rem 1rem rgb(121, 121, 121);
 }
 
-textarea, #content{
-    width: 30rem;
+#content{
     height: 10rem;
-    box-shadow: .5rem .5rem 1rem black;
+    box-shadow: .5rem .5rem 1rem rgb(121, 121, 121);
 }
-#name {
+#name, #content {
+    width: 70vw;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 .btn{
     margin-top: 1rem;
+    font-weight: 900;
 }
 .btn:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (min-width: 905px) {
+    #name, #content {
+        width: 40rem;
+    }
 }

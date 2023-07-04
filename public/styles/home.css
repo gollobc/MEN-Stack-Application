@@ -21,10 +21,8 @@ h2 {
     margin-top: 76px;
 }
 .about a{
-    padding: 1rem;
-    background-color: black;
+    background-color: #333;
     color: antiquewhite;
-    border-radius: 10px;
 }
 
 #top {
@@ -50,7 +48,6 @@ h2 {
     background-size: cover;
     
 }
-
 .aerobic div{
     backdrop-filter: blur(10px);
 }

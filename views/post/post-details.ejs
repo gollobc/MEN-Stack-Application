@@ -16,10 +16,10 @@
                 <p><%= post.content %></p>
             </section>
             <section class="actions">
-                <button class="btn"><a href="/posts/<%= post._id %>/edit">Update</a></button>
-                <button class="btn"><a href="/comments/new/<%= post._id %>">Comment</a></button>
+                <button class="btn btn-secondary"><a href="/posts/<%= post._id %>/edit">Update</a></button>
+                <button class="btn btn-secondary"><a href="/comments/new/<%= post._id %>">Comment</a></button>
                 <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
-                    <input class="btn" type="submit" value="Delete" />
+                    <input class="btn btn-secondary" type="submit" value="Delete" />
                 </form>
             </section>
         </div>    
@@ -30,6 +30,7 @@
                     <% for (let comment of post.comments) { %>
                     <li>
                         <p><%= comment.name %> - <%= comment.content %></p>
+                        <a class="hidden btn btn-secondary" href="/comments/<%= comment._id %>">More</a>
                     </li>
                     <% } %>
                 </ul>

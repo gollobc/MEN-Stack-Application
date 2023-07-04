@@ -15,7 +15,7 @@
             <p><%= comment.content %></p>
         </section>
         <form method="POST" action="/comments/<%= comment._id %>?_method=DELETE">
-            <input class="btn" id="btn" type="submit" value="Delete" />
+            <input class="btn btn-secondary" id="btn" type="submit" value="Delete" />
         </form>
     </div>
     <%- include('../partials/footer.ejs') %>

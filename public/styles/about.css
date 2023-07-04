@@ -21,7 +21,7 @@ iframe {
     border: 5px solid rgb(53, 53, 53);
     border-radius: 5px;
 }
-div {
+#about {
     margin: 2rem 0;
     border: 5px solid rgb(184, 184, 184);
     border-style: outset;

@@ -32,22 +32,22 @@
                                 <% while(post.comments[i] && i<2) { %>  
                                 <li class="comments">
                                     <p><%= post.comments[i].name %> - <%= post.comments[i].content %></p>
-                                    <a class="hidden" href="/comments/<%= post.comments[i]._id %>">More</a>
+                                    <a class="hidden btn" href="/comments/<%= post.comments[i]._id %>">More</a>
                                 </li>
                                 <% i++; %>
                                 <% } %>
                             </ul>
                         </section>
                     <% } %>
-                    <a class="hidden" href="/posts/<%= post._id %>">Edit</a>
-                    <a class="hidden" href="/comments/new/<%= post._id %>">Comment</a>
+                     <a class="hidden btn" href="/posts/<%= post._id %>">Edit</a>
+                    <a class="hidden btn" href="/comments/new/<%= post._id %>">Comment</a>
                 </li>
                 <% } %>
             </ul>
         </section>
     </main>
     <div class="newPost">
-        <a id="newPost" class="bottom" href="/posts/new">New Post</a>
+        <a id="newPost" class="bottom btn" href="/posts/new">New Post</a>
     </div>
 
     <%- include('../partials/footer.ejs') %>

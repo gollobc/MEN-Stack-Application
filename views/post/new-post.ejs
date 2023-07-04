@@ -16,10 +16,10 @@
     <form method="POST" action="/posts">
         <!-- Name input -->
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="User"><br>
+        <input type="text" class="form-control" id="name" name="name" placeholder="User"><br>
         <label for="content">Content:</label><br>
-        <textarea id="content" name="content" placeholder="Content" required></textarea><br>
-        <input type="submit" value="Create Post">
+        <textarea id="content" class="form-control" name="content" placeholder="Content" required></textarea><br>
+        <input type="submit" class="btn" value="Create Post">
     </form>
 
     <%- include('../partials/footer.ejs') %>
