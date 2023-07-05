@@ -19,6 +19,9 @@ body {
 h2, h3, #newPost {
     font-weight: 900;
 }
+h3 {
+    margin-left: 1rem;
+}
 .listings {
     margin-top: 50px;
     
@@ -37,16 +40,12 @@ h2, h3, #newPost {
     padding: 5px;
     border-radius: 4px;
     position: relative;
-    /* text-align: center; */
 }
 
 .listings li a {
     background-color: #333;
     color: #fff;
     font-size: 14px;
-    /* padding: 5px 20px;
-    border: none;
-    border-radius: 4px; */
     text-decoration: none;
 }
 
@@ -86,7 +85,6 @@ li:hover > .hidden {
 .newPost {
     display: flex;
     justify-content: center;
-    /* margin-top: 2rem; */
 }
 #newPost {
     background-color: #fcf1f1;

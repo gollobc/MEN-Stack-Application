@@ -45,7 +45,7 @@ router.put('/:id', (req, res) => {
         req.body,
         { new: true }
     )
-        .then(post => res.redirect('post/'+ post._id))
+        .then(post => res.redirect('/posts/'+ post._id))
 })
 
 // Destroy Route DELETE Route deletes a post document

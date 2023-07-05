@@ -87,7 +87,7 @@ app.use('/comments', commentCtrl)
 
 //Runs for any route not of the above
 app.get('*', function (req, res) {
-    res.send('404 Error: Page Not Found')
+    res.render('404')
 });
 
 /* Tell the app to listen on the specified port

@@ -81,3 +81,9 @@ li p{
     padding: 0;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 480px) {
+    .btn {
+        font-size: .9rem;
+    }   
+}
